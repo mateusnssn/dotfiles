@@ -1,0 +1,55 @@
+{
+  "blocks":[
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "session",
+          "style": "diamond",
+          "foreground": "#ffffff",
+          "background": "#B4009E",
+          "leading_diamond": "\uE0B6",
+          "trailing_diamond": "",
+          "properties": {
+            "prefix": "",
+            "display_host":false
+          }
+        },
+        {
+          "type":"path",
+          "style":"plain",
+          "foreground": "#3f3f3f",
+          "background": "#FFFF00",
+          "properties": {
+            "style": "folder"
+          }
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "#ffffff",
+          "background": "#4E44FF",
+          "properties": {
+            "branch_icon": "",
+            "display_status": false,
+            "prefix": " \u279C git(",
+            "postfix": ") "
+          }
+        },
+        {
+          "type": "time",
+          "style": "diamond",
+          "trailing_diamond": "\uE0B0",
+          "foreground": "#ffffff",
+          "background": "lightGreen",
+          "properties": {
+	    "prefix": " \u2665 ",
+            "time_format": "15:04"
+          }
+        }
+      ]
+    }
+  ],
+  "final_space": true
+}
