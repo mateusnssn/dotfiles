@@ -1,6 +1,7 @@
 
 # Dotfiles
 
+![Captura de tela](./img/printScreen_2021-12-25_22-00-08.png) 
 ![Captura de tela](./img/printScreen132357.png)
 
 ## Dependencies
