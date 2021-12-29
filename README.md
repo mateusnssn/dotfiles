@@ -7,7 +7,7 @@
 ## Dependencies on Linux
 
 * [Rofi](https://github.com/davatorium/rofi);
-* [Ubuntu Yaru theme suite](https://github.com/ubuntu/yaru)
+* [Ubuntu Yaru theme suite](https://github.com/ubuntu/yaru);
 * [Bracket Pair Colorizer 2](https://github.com/CoenraadS/Bracket-Pair-Colorizer-2);
 * [Omni Theme](https://marketplace.visualstudio.com/items?itemName=rocketseat.theme-omni);
 * [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme);
