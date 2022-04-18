@@ -1,8 +1,8 @@
 
 # Dotfiles
 
-![Captura de tela](./img/printScreen_2021-12-25_22-00-08.png) 
 
+<img width="50%" src="./img/printScreen132357.png"><img width="50%" src="./img/printScreen_2021-12-25_22-00-08.png">
 
 ## Dependencies on Linux
 
