@@ -93,7 +93,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 
-
+alias obsidian='./Obsidian-1.3.5.AppImage &'
 alias emacs='emacs -nw'
 alias ocaml='rlwrap ocaml'
 alias cls='clear'
