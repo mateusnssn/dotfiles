@@ -1,6 +1,19 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
+# -- -- -- -- THEME
+PS1='\[\e[0;32m\]\u@\h \[\e[0;34m\]\w\[\e[0;31m\]\$ \[\e[0m\]'
+
+GIT_PROMPT_DIR=~/.bash-git-prompt
+. $GIT_PROMPT_DIR/gitprompt.sh
+
+
+alias hellouwu="/mnt/c/Users/mateu/banner_cli"
+
+if [[ $- == *i* ]]; then
+    /mnt/c/Users/mateu/banner_cli
+fi
+
+
 
 # If not running interactively, don't do anything
 case $- in
@@ -47,12 +60,12 @@ esac
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	# We have color support; assume it's compliant with Ecma-48
-	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	# a case would tend to support setf rather than setaf.)
-	color_prompt=yes
+        # We have color support; assume it's compliant with Ecma-48
+        # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+        # a case would tend to support setf rather than setaf.)
+        color_prompt=yes
     else
-	color_prompt=
+        color_prompt=
     fi
 fi
 
@@ -88,18 +101,10 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
+alias ls='exa -a'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-
-
-alias obsidian='./Obsidian-1.3.5.AppImage &'
-alias emacs='emacs -nw'
-alias ocaml='rlwrap ocaml'
-alias cls='clear'
-alias n='nnn -H'
-alias dev='cd ~/dev/sources/'
-alias bye='poweroff'
 
 
 # Add an "alert" alias for long running commands.  Use like so:
@@ -125,9 +130,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-. "$HOME/.cargo/env"
-alias snake-game='snake-game() {
-        python3 ~/.gv/snake-gamet.py;
-        }
-        snake-game'
